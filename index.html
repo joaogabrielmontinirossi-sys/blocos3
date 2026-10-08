@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Blocos 3</title>
+<meta name="description" content="Blocos 3: um simulador de montar em que cada peça é uma tarefa. Escolha um modelo, adicione tarefas e veja a construção ganhar cor.">
+<meta name="theme-color" content="#0E6B4E">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Blocos 3">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header id="bar">
+  <div class="brand"><img src="logo.svg" alt=""><span>Blocos 3</span></div>
+  <nav id="tabs" aria-label="Seções"></nav>
+  <button id="sync" data-act="tab" data-tab="ajustes"></button>
+</header>
+<main id="main"></main>
+<div id="scrim"></div>
+<aside id="sheet" aria-live="polite"></aside>
+<div id="toast" role="status"></div>
+<input type="file" id="filepick" accept=".json,application/json" hidden>
+<script src="modelos.js"></script>
+<script src="store.js"></script>
+<script src="sync.js"></script>
+<script src="motor.js"></script>
+<script src="fx.js"></script>
+<script src="app.js"></script>
+<script src="elo.js" data-app="blocos3"></script>
+</body>
+</html>
